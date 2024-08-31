@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #03346e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.calculatorBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f316f;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  width: 750px;
+  padding: 10px;
+}
+
+.display {
+  background-color: #021526;
+  width: 100%;
+  color: #fff;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  font-family: system-ui;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: system-ui;
+  font-size: 20px;
+}
+
+.reset {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #8c3061;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.openParenthesis {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.closeParenthesis {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dot {
+  grid-area: 5 / 3 / 6 / 4;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.division {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.sum {
+  grid-area: 3 / 4 / 4 / 5;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.multiplication {
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.difference {
+  grid-area: 4 / 4 / 5 / 5;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.equal {
+  grid-area: 6 / 1 / 7 / 5;
+  background-color: #522258;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.module {
+  grid-area:  5 / 4 / 6 / 5;
+  background-color: #d95f59;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.number1 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number2 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number3 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number4 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number5 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number6 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.number7 {
+  grid-area: 4 / 1 / 5 / 2;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number8 {
+  grid-area: 4 / 2 / 5 / 3;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.number9 {
+  grid-area: 4 / 3 / 5 / 4;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.number0 {
+  grid-area: 5 / 1 / 6 / 3;
+  background-color: #c63c51;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.historialSection{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-top: 3px solid black;
+}
+
+.resetButtonSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 30%; 
+}
+
+.resetHistorialButton{
+  padding: 5px;
+  color: white;
+  font-family: system-ui;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #1B6BE0;
+}
+
+.history{
+  background-color:#acc8ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 70%;
+  border-radius: 10px;
+  
+}
+
+.historyTitle{
+  font-size: 25px;
+  font-family: system-ui;
+  margin-bottom: 10px;
+}
+
+.history > ul > li{
+  font-family: system-ui;
+  font-size: 20px;
+  list-style: none;
+}
